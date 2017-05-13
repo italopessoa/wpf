@@ -1,0 +1,15 @@
+﻿<Window x:Class="DataBindingOneWay.ElementBind"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DataBindingOneWay"
+        mc:Ignorable="d"
+        Title="ElementBind" Height="300" Width="300">
+    <Grid>
+        <StackPanel Orientation="Horizontal">
+        <Slider Name="mySlider" Minimum="0" Maximum="100" Width="200"/>
+        <TextBlock Text="{Binding Value,ElementName=mySlider}" Margin="5"/>
+        </StackPanel>
+    </Grid>
+</Window>
